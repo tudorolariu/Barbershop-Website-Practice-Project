@@ -1,254 +1,295 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Barbershop practice project</title>
-        <link rel = "stylesheet" href = "/src/style.css">
-        <link rel = "icon" type = "image/png" href = "/media/favicon.png">
-        <meta property = "og:image" content = "https://dl.dropboxusercontent.com/scl/fi/eddlpswf0g4lidg70ekla/og-image.png?rlkey=u22fbjflnwtxey4imrdqu9lzs&dl=0"/>
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="627"/>
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-        <script src = "https://kit.fontawesome.com/a076d05399.js" crossorigin = "anonymous"></script>
-        <script src = "https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-        <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
-    </head>
+  <head>
+    <title>Barbershop practice project</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="icon" type="image/png" href="/media/favicon.png" />
+    <meta
+      property="og:image"
+      content="https://dl.dropboxusercontent.com/scl/fi/eddlpswf0g4lidg70ekla/og-image.png?rlkey=u22fbjflnwtxey4imrdqu9lzs&dl=0"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
 
-    <body>
-        <!-- Banner -->
-        <section id = "banner">
-            <img src = "/media/logo.png" class = "logo">
-            <div class = "bannerText">
-                <h1>Ceva titlu misto</h1>
-                <p>Ceva slogan si mai misto</p>
-                <div class = "bannerButton">
-                    <a href = "#services"><span></span>Services</a>
-                    <a id = bannerAppointmentsButton href = "javascript:;"><span></span>Appointments</a>
-                </div>
-            </div>
-        </section>
+  <body>
+    <!-- Banner -->
+    <section id="banner">
+      <img src="/media/logo.png" class="logo" />
+      <div class="bannerText">
+        <h1>Ceva titlu misto</h1>
+        <p>Ceva slogan si mai misto</p>
+        <div class="bannerButton">
+          <a href="#services"><span></span>Services</a>
+          <a id="bannerAppointmentsButton" href="javascript:;"
+            ><span></span>Appointments</a
+          >
+        </div>
+      </div>
+    </section>
 
-        <!-- Menu -->
-        <div id = "menuButton">
-            <img id = "menuLogo" src = "/media/menu.png">
+    <!-- Menu -->
+    <div id="menuButton">
+      <img id="menuLogo" src="/media/menu.png" />
+    </div>
+
+    <div id="menu">
+      <nav>
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#aboutUs">About us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li id="menuAppointmentsButton">
+            <a href="javascript:;">Appointments</a>
+          </li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Appointments alert -->
+    <div class="appointmentsAlert">
+      <i class="fas fa-exclamation-circle"></i>
+      <div class="appointmentsAlertText">
+        Coming soon - Feature under development
+      </div>
+      <div
+        id="appointmentsAlertCloseButton"
+        class="appointmentsAlertCloseButton"
+      >
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+
+    <!-- About us -->
+    <section id="aboutUs">
+      <div class="sectionTitleText">
+        <h1>About us</h1>
+      </div>
+
+      <div class="paragraph">
+        <div class="paragraphTitleRow">
+          <div class="paragraphIcon">
+            <i class="fa-solid fa-book"></i>
+          </div>
+
+          <h3>Our story</h3>
         </div>
 
-        <div id = "menu">
-            <nav>
-                <ul>
-                    <li><a href = "#banner">Home</a></li>
-                    <li><a href = "#aboutUs">About us</a></li>
-                    <li><a href = "#services">Services</a></li>
-                    <li id = "menuAppointmentsButton" ><a href = "javascript:;">Appointments</a></li>
-                    <li><a href = "#reviews">Reviews</a></li>
-                    <li><a href = "#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div class="paragraph">
+        <div class="paragraphTitleRow">
+          <div class="paragraphIcon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+
+          <h3>Our experienced staff</h3>
         </div>
 
-        <!-- Appointments alert -->
-        <div class = "appointmentsAlert">
-            <i class = "fas fa-exclamation-circle"></i>
-            <div class = "appointmentsAlertText">Coming soon - Feature under development</div>
-            <div id = "appointmentsAlertCloseButton" class = "appointmentsAlertCloseButton">
-                <i class = "fas fa-times"></i>
-            </div>
+        <div class="staffRow">
+          <figure class="staffColumn">
+            <img src="/media/toddirel.jpg" />
+            <figcaption>Sweeney Todd</figcaption>
+          </figure>
+
+          <figure class="staffColumn">
+            <img src="/media/ciomu.jpg" />
+            <figcaption>Dr. Ciomu <br />(care niveleaza omu')</figcaption>
+          </figure>
+
+          <figure class="staffColumn">
+            <img src="/media/dorel.jpg" />
+            <figcaption>Dorel</figcaption>
+          </figure>
+
+          <figure class="staffColumn">
+            <img src="/media/hanz.jpg" />
+            <figcaption>Hanz</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="sectionTitleText">
+        <h1>Services</h1>
+      </div>
+
+      <div class="serviceBox">
+        <div class="singleService">
+          <img src="/media/hair-styling.jpg" />
+
+          <div class="overlay"></div>
+
+          <div class="serviceDescription">
+            <h3>Hair styling</h3>
+            <hr />
+            <p>
+              Mi pellentesque nullam senectus enim convallis scelerisque
+              parturient quam, urna litora vitae elementum dictumst turpis
+              primis venenatis donec
+            </p>
+          </div>
         </div>
 
-        <!-- About us -->
-        <section id = "aboutUs">
-            <div class = "sectionTitleText">
-                <h1>About us</h1>
+        <div class="singleService">
+          <img src="/media/beard-trimming.jpg" />
+
+          <div class="overlay"></div>
+
+          <div class="serviceDescription">
+            <h3>Beard trimming</h3>
+            <hr />
+            <p>
+              Mi pellentesque nullam senectus enim convallis scelerisque
+              parturient quam, urna litora vitae elementum dictumst turpis
+              primis venenatis donec
+            </p>
+          </div>
+        </div>
+
+        <div class="singleService">
+          <img src="/media/hair-removal.jpg" />
+
+          <div class="overlay"></div>
+
+          <div class="serviceDescription">
+            <h3>Permanent hair removal</h3>
+            <hr />
+            <p>
+              Get your body ready for summer with the only method that
+              guarantees 100% no hair growing ever!<br /><br />- Performed by
+              Hanz -
+            </p>
+          </div>
+        </div>
+
+        <div class="singleService">
+          <img src="/media/hair-washing.jpg" />
+
+          <div class="overlay"></div>
+
+          <div class="serviceDescription">
+            <h3>Hair washing</h3>
+            <hr />
+            <p>
+              Mi pellentesque nullam senectus enim convallis scelerisque
+              parturient quam, urna litora vitae elementum dictumst turpis
+              primis venenatis donec
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews">
+      <div class="sectionTitleText">
+        <h1>Client reviews</h1>
+      </div>
+
+      <div class="reviewsRow">
+        <div class="reviewsColumn">
+          <div class="client">
+            <img src = /media/hitler.jpg>
+            <div class="clientInfo">
+              <h4>Adolf Hitler <i class="fa-brands fa-twitter"></i></h4>
+              <small>@thebestfuhrer</small>
             </div>
+          </div>
 
-            <div class = "paragraph">
-                <div class = "paragraphTitleRow">
-                    <div class = "paragraphIcon">
-                        <i class="fa-solid fa-book"></i>
-                    </div>
+          <p>
+            Ich bin ein Barbie-Mädchen in der Barbie-Welt. Leben in Plastik, es
+            ist fantastisch. Du kannst mir die Haare bürsten, mich überall
+            ausziehen Fantasie, das Leben ist deine Schöpfung.
+          </p>
+        </div>
 
-                    <h3>Our story</h3>
-                </div>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                    deserunt mollit anim id est laborum.</p>
+        <div class="reviewsColumn">
+          <div class="client">
+            <img src = /media/chewie.jpg>
+            <div class="clientInfo">
+              <h4>Chewbacca <i class="fa-brands fa-twitter"></i></h4>
+              <small>@chewie</small>
             </div>
+          </div>
 
-            <div class = "paragraph">
-                <div class = "paragraphTitleRow">
-                    <div class = "paragraphIcon">
-                        <i class = "fa-solid fa-people-group"></i>
-                    </div>
+          <p>WAGRRRRWWGAHHH WWWRRGGAWWWWRR.</p>
+        </div>
 
-                    <h3>Our experienced staff</h3>
-                </div>
-                
-                <div class = "staffRow">
-                    <figure class = "staffColumn">
-                        <img src = "/media/toddirel.jpg">
-                        <figcaption>Sweeney Todd</figcaption>
-                    </figure>
-    
-                    <figure class = "staffColumn">
-                        <img src = "/media/ciomu.jpg">
-                        <figcaption>Dr. Ciomu <br>(care niveleaza omu')</figcaption>
-                    </figure>
-    
-                    <figure class = "staffColumn">
-                        <img src = "/media/dorel.jpg">
-                        <figcaption>Dorel</figcaption>
-                    </figure>
-
-                    <figure class = "staffColumn">
-                        <img src = "/media/hanz.jpg">
-                        <figcaption>Hanz</figcaption>
-                    </figure>
-                </div>
+        <div class="reviewsColumn">
+          <div class="client">
+            <img src = /media/fester.jpg>
+            <div class="clientInfo">
+              <h4>Fester Addams <i class="fa-brands fa-twitter"></i></h4>
+              <small>@unclefester</small>
             </div>
-        </section>
+          </div>
 
-        <!-- Services -->
-        <section id = "services">
-            <div class = "sectionTitleText">
-                <h1>Services</h1>
-            </div>
+          <p>Vand cazan de rachiu.</p>
+        </div>
+      </div>
+    </section>
 
-            <div class = "serviceBox">
-                <div class = "singleService">
-                    <img src = "/media/hair-styling.jpg">
+    <!-- Contact -->
+    <section id="contact">
+      <img src = /media/contact-logo.png class = contactLogo>
 
-                    <div class = "overlay"></div>
-                    
-                    <div class = serviceDescription>
-                        <h3>Hair styling</h3>
-                        <hr>
-                        <p>Mi pellentesque nullam senectus enim convallis scelerisque parturient quam, 
-                            urna litora vitae elementum dictumst turpis primis venenatis donec</p>
-                    </div>
-                </div>
+      <div class="sectionTitleText">
+        <h1>Contact</h1>
+      </div>
 
-                <div class = "singleService">
-                    <img src = "/media/beard-trimming.jpg">
-                    
-                    <div class = "overlay"></div>
-                    
-                    <div class = serviceDescription>
-                        <h3>Beard trimming</h3>
-                        <hr>
-                        <p>Mi pellentesque nullam senectus enim convallis scelerisque parturient quam, 
-                            urna litora vitae elementum dictumst turpis primis venenatis donec</p>
-                    </div>
-                </div>
+      <div class="contactRow">
+        <div class="contactLeft">
+          <h3>Opening hours</h3>
+          <p><i class="fa-solid fa-clock"></i>Monday to Friday - 8AM to 8PM</p>
+          <p>
+            <i class="fa-solid fa-clock"></i>Saturday & Sunday - 10AM to 2PM
+          </p>
+        </div>
 
-                <div class = "singleService">
-                    <img src = "/media/hair-removal.jpg">
-                    
-                    <div class = "overlay"></div>
-                    
-                    <div class = serviceDescription>
-                        <h3>Permanent hair removal</h3>
-                        <hr>
-                        <p>Get your body ready for summer with the only method that guarantees 100% 
-                            no hair growing ever!<br><br>- Performed by Hanz -</p>
-                    </div>
-                </div>
+        <div class="contactRight">
+          <h3>Get in touch</h3>
+          <p>
+            Triunghiul Bermudelor, al treilea coral pe dreapta<i
+              class="fa-solid fa-location-dot"
+            ></i>
+          </p>
+          <p>
+            cevatitlumisto@mailinator.com<i class="fa-solid fa-paper-plane"></i>
+          </p>
+          <p>+40722222222<i class="fa-solid fa-phone"></i></p>
+        </div>
+      </div>
 
-                <div class = "singleService">
-                    <img src = "/media/hair-washing.jpg">
-                    
-                    <div class = "overlay"></div>
-                    
-                    <div class = serviceDescription>
-                        <h3>Hair washing</h3>
-                        <hr>
-                        <p>Mi pellentesque nullam senectus enim convallis scelerisque parturient quam, 
-                            urna litora vitae elementum dictumst turpis primis venenatis donec</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="socialLinks">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <p>© Copyright Dorel - Vara lu' '58</p>
+      </div>
+    </section>
 
-        <!-- Reviews -->
-        <section id = "reviews">
-            <div class = "sectionTitleText">
-                <h1>Client reviews</h1>
-            </div>
-
-            <div class = "reviewsRow">
-                <div class = "reviewsColumn">
-                    <div class = client>
-                        <img src = /media/hitler.jpg>
-                        <div class = clientInfo>
-                            <h4>Adolf Hitler <i class = "fa-brands fa-twitter"></i></h4>
-                            <small>@thebestfuhrer</small>
-                        </div>
-                    </div>
-                    
-                    <p>Ich bin ein Barbie-Mädchen in der Barbie-Welt. Leben in Plastik, es ist fantastisch. 
-                        Du kannst mir die Haare bürsten, mich überall ausziehen Fantasie, das Leben ist 
-                        deine Schöpfung.</p>
-                </div>
-
-                <div class = "reviewsColumn">
-                    <div class = client>
-                        <img src = /media/chewie.jpg>
-                        <div class = clientInfo>
-                            <h4>Chewbacca <i class = "fa-brands fa-twitter"></i></h4>
-                            <small>@chewie</small>
-                        </div>
-                    </div>
-
-                    <p>WAGRRRRWWGAHHH WWWRRGGAWWWWRR.</p>
-                </div>
-
-                <div class = "reviewsColumn">
-                    <div class = client>
-                        <img src = /media/fester.jpg>
-                        <div class = clientInfo>
-                            <h4>Fester Addams <i class = "fa-brands fa-twitter"></i></h4>
-                            <small>@unclefester</small>
-                        </div>
-                    </div>
-
-                    <p>Vand cazan de rachiu.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id = "contact">
-            <img src = /media/contact-logo.png class = contactLogo>
-
-            <div class = "sectionTitleText">
-                <h1>Contact</h1>
-            </div>
-
-            <div class = "contactRow">
-                <div class = "contactLeft">
-                    <h3>Opening hours</h3>
-                    <p><i class = "fa-solid fa-clock"></i>Monday to Friday - 8AM to 8PM</p>
-                    <p><i class = "fa-solid fa-clock"></i>Saturday & Sunday - 10AM to 2PM</p>
-                </div>
-    
-                <div class = "contactRight">
-                    <h3>Get in touch</h3>
-                    <p>Triunghiul Bermudelor, al treilea coral pe dreapta<i class = "fa-solid fa-location-dot"></i></p>
-                    <p>cevatitlumisto@mailinator.com<i class = "fa-solid fa-paper-plane"></i></p>
-                    <p>+40722222222<i class = "fa-solid fa-phone"></i></p>
-                </div>
-            </div>
-
-            <div class = "socialLinks">
-                <i class = "fa-brands fa-facebook"></i>
-                <i class = "fa-brands fa-instagram"></i>
-                <i class = "fa-brands fa-twitter"></i>
-                <i class = "fa-brands fa-youtube"></i>
-                <p>© Copyright Dorel - Vara lu' '58</p>
-            </div>
-        </section>
-
-        <script src = "/src/script.js"></script>
-    </body>
+    <script src="/src/script.js"></script>
+  </body>
 </html>
